@@ -19,6 +19,10 @@
 		D31701312A82865400B95475 /* popularCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D317012F2A82865400B95475 /* popularCoffeeCollectionViewCell.xib */; };
 		D31701362A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31701342A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift */; };
 		D31701372A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31701352A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib */; };
+		D31C7D682A86AC9B00AC4768 /* favoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D662A86AC9B00AC4768 /* favoriteCollectionViewCell.swift */; };
+		D31C7D692A86AC9B00AC4768 /* favoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */; };
+		D31C7D6C2A86ACE700AC4768 /* favoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D6B2A86ACE700AC4768 /* favoriteViewController.swift */; };
+		D31C7D6E2A86BA6600AC4768 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D6D2A86BA6600AC4768 /* mapViewController.swift */; };
 		D3299F8F2A80055E0052BDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F8E2A80055E0052BDCB /* AppDelegate.swift */; };
 		D3299F912A80055E0052BDCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F902A80055E0052BDCB /* SceneDelegate.swift */; };
 		D3299F962A80055E0052BDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3299F942A80055E0052BDCB /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		D317012F2A82865400B95475 /* popularCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = popularCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D31701342A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearestCoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31701352A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = nearestCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D31C7D662A86AC9B00AC4768 /* favoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = favoriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		D31C7D6B2A86ACE700AC4768 /* favoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteViewController.swift; sourceTree = "<group>"; };
+		D31C7D6D2A86BA6600AC4768 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		D3299F8B2A80055E0052BDCB /* coffee_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffee_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3299F8E2A80055E0052BDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3299F902A80055E0052BDCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D31701182A81033900B95475 /* HomeViewController.swift */,
+				D31C7D6B2A86ACE700AC4768 /* favoriteViewController.swift */,
+				D31C7D6D2A86BA6600AC4768 /* mapViewController.swift */,
 				D3299F942A80055E0052BDCB /* Main.storyboard */,
 			);
 			path = "custom TabBar";
@@ -120,6 +130,7 @@
 		D317012D2A82862F00B95475 /* collectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D31C7D6A2A86ACAD00AC4768 /* favoriteCoffee */,
 				D31701332A82867000B95475 /* nearestCoffee */,
 				D31701322A82865D00B95475 /* popularCoffee */,
 			);
@@ -142,6 +153,15 @@
 				D31701352A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib */,
 			);
 			path = nearestCoffee;
+			sourceTree = "<group>";
+		};
+		D31C7D6A2A86ACAD00AC4768 /* favoriteCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				D31C7D662A86AC9B00AC4768 /* favoriteCollectionViewCell.swift */,
+				D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */,
+			);
+			path = favoriteCoffee;
 			sourceTree = "<group>";
 		};
 		D3299F822A80055E0052BDCB = {
@@ -233,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31C7D692A86AC9B00AC4768 /* favoriteCollectionViewCell.xib in Resources */,
 				D3299F9E2A8005600052BDCB /* LaunchScreen.storyboard in Resources */,
 				D3299F9B2A8005600052BDCB /* Assets.xcassets in Resources */,
 				D31701312A82865400B95475 /* popularCoffeeCollectionViewCell.xib in Resources */,
@@ -250,6 +271,8 @@
 			files = (
 				D31701362A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift in Sources */,
 				D31701282A82854200B95475 /* popularCoffee.swift in Sources */,
+				D31C7D6C2A86ACE700AC4768 /* favoriteViewController.swift in Sources */,
+				D31C7D682A86AC9B00AC4768 /* favoriteCollectionViewCell.swift in Sources */,
 				D317012A2A8285B600B95475 /* coffeeShop.swift in Sources */,
 				D3299F8F2A80055E0052BDCB /* AppDelegate.swift in Sources */,
 				D317011B2A8103ED00B95475 /* uiview+Extention.swift in Sources */,
@@ -261,6 +284,7 @@
 				D317012C2A82860400B95475 /* shopSpecial.swift in Sources */,
 				D31701302A82865400B95475 /* popularCoffeeCollectionViewCell.swift in Sources */,
 				D31701242A810C2C00B95475 /* card view.swift in Sources */,
+				D31C7D6E2A86BA6600AC4768 /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

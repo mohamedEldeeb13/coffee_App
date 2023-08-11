@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,33 +27,79 @@
             </objects>
             <point key="canvasLocation" x="-775" y="742"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="qdF-db-h2z">
             <objects>
-                <viewController id="Lzz-8Z-Roo" sceneMemberID="viewController">
+                <viewController id="Lzz-8Z-Roo" customClass="mapViewController" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPE-Nu-vn4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-pE-QHd">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qzi-b8-BLn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YuA-pE-QHd" secondAttribute="trailing" id="1AY-EE-TiB"/>
+                            <constraint firstItem="YuA-pE-QHd" firstAttribute="leading" secondItem="OPE-Nu-vn4" secondAttribute="leading" id="Bji-uH-9wg"/>
+                            <constraint firstAttribute="bottom" secondItem="YuA-pE-QHd" secondAttribute="bottom" id="aKG-y4-gCK"/>
+                            <constraint firstItem="YuA-pE-QHd" firstAttribute="top" secondItem="OPE-Nu-vn4" secondAttribute="top" id="e3e-oj-3f3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map-pin" id="ytG-hu-rE3"/>
+                    <connections>
+                        <outlet property="mapView" destination="YuA-pE-QHd" id="789-eN-ax5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ET-sq-vcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="147" y="742"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite View Controller-->
         <scene sceneID="vgl-iI-hkD">
             <objects>
-                <viewController id="vio-GQ-GcK" sceneMemberID="viewController">
+                <viewController id="vio-GQ-GcK" customClass="favoriteViewController" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4D-q0-fbP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KXt-NS-5y5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SmK-h0-bXh">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="k5h-tJ-ROm">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IB4-HN-omw">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rFi-Y6-ybV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rFi-Y6-ybV" firstAttribute="trailing" secondItem="KXt-NS-5y5" secondAttribute="trailing" id="Fqq-og-XrK"/>
+                            <constraint firstItem="KXt-NS-5y5" firstAttribute="top" secondItem="rFi-Y6-ybV" secondAttribute="top" id="S81-dG-HVk"/>
+                            <constraint firstItem="KXt-NS-5y5" firstAttribute="leading" secondItem="rFi-Y6-ybV" secondAttribute="leading" id="Z5r-zC-UcY"/>
+                            <constraint firstItem="rFi-Y6-ybV" firstAttribute="bottom" secondItem="KXt-NS-5y5" secondAttribute="bottom" id="wWB-zO-giU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart" id="e3q-N7-5SR"/>
+                    <connections>
+                        <outlet property="favoriteCollectionView" destination="KXt-NS-5y5" id="Scz-AA-VPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLP-5j-Jh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
