@@ -19,16 +19,28 @@
 		D31701312A82865400B95475 /* popularCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D317012F2A82865400B95475 /* popularCoffeeCollectionViewCell.xib */; };
 		D31701362A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31701342A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift */; };
 		D31701372A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31701352A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib */; };
+		D31BF05A2A8A526C00A615B9 /* NearbyCafes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31BF0592A8A526C00A615B9 /* NearbyCafes.storyboard */; };
+		D31BF05C2A8A527F00A615B9 /* NearbyCafesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31BF05B2A8A527F00A615B9 /* NearbyCafesViewController.swift */; };
 		D31C7D682A86AC9B00AC4768 /* favoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D662A86AC9B00AC4768 /* favoriteCollectionViewCell.swift */; };
 		D31C7D692A86AC9B00AC4768 /* favoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */; };
 		D31C7D6C2A86ACE700AC4768 /* favoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D6B2A86ACE700AC4768 /* favoriteViewController.swift */; };
 		D31C7D6E2A86BA6600AC4768 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C7D6D2A86BA6600AC4768 /* mapViewController.swift */; };
+		D32946F82A87B292003388F8 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32946F62A87B292003388F8 /* detailsViewController.swift */; };
+		D32946F92A87B292003388F8 /* detailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32946F72A87B292003388F8 /* detailsViewController.xib */; };
 		D3299F8F2A80055E0052BDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F8E2A80055E0052BDCB /* AppDelegate.swift */; };
 		D3299F912A80055E0052BDCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F902A80055E0052BDCB /* SceneDelegate.swift */; };
 		D3299F962A80055E0052BDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3299F942A80055E0052BDCB /* Main.storyboard */; };
 		D3299F992A80055E0052BDCB /* coffee_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3299F972A80055E0052BDCB /* coffee_App.xcdatamodeld */; };
 		D3299F9B2A8005600052BDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3299F9A2A8005600052BDCB /* Assets.xcassets */; };
 		D3299F9E2A8005600052BDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3299F9C2A8005600052BDCB /* LaunchScreen.storyboard */; };
+		D39E5C6E2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E5C6C2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift */; };
+		D39E5C6F2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39E5C6D2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib */; };
+		D3C55DEB2A8D441000459EE4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C55DEA2A8D441000459EE4 /* Order.storyboard */; };
+		D3C55DED2A8D442300459EE4 /* orderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C55DEC2A8D442300459EE4 /* orderViewController.swift */; };
+		D3C55DF02A8D552600459EE4 /* GIF Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C55DEF2A8D552600459EE4 /* GIF Loader.swift */; };
+		D3C55DF22A8D556F00459EE4 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C55DF12A8D556F00459EE4 /* UIImageView++.swift */; };
+		D3D961AC2A8A9D0500E1BD58 /* Reserve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D961AB2A8A9D0500E1BD58 /* Reserve.storyboard */; };
+		D3D961AE2A8A9D1400E1BD58 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D961AD2A8A9D1400E1BD58 /* ReserveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +56,14 @@
 		D317012F2A82865400B95475 /* popularCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = popularCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D31701342A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearestCoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31701352A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = nearestCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D31BF0592A8A526C00A615B9 /* NearbyCafes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NearbyCafes.storyboard; sourceTree = "<group>"; };
+		D31BF05B2A8A527F00A615B9 /* NearbyCafesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCafesViewController.swift; sourceTree = "<group>"; };
 		D31C7D662A86AC9B00AC4768 /* favoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = favoriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		D31C7D6B2A86ACE700AC4768 /* favoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteViewController.swift; sourceTree = "<group>"; };
 		D31C7D6D2A86BA6600AC4768 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		D32946F62A87B292003388F8 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
+		D32946F72A87B292003388F8 /* detailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailsViewController.xib; sourceTree = "<group>"; };
 		D3299F8B2A80055E0052BDCB /* coffee_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffee_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3299F8E2A80055E0052BDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3299F902A80055E0052BDCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +72,14 @@
 		D3299F9A2A8005600052BDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3299F9D2A8005600052BDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3299F9F2A8005600052BDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39E5C6C2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		D39E5C6D2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopSpecialCollectionViewCell.xib; sourceTree = "<group>"; };
+		D3C55DEA2A8D441000459EE4 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		D3C55DEC2A8D442300459EE4 /* orderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewController.swift; sourceTree = "<group>"; };
+		D3C55DEF2A8D552600459EE4 /* GIF Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIF Loader.swift"; sourceTree = "<group>"; };
+		D3C55DF12A8D556F00459EE4 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
+		D3D961AB2A8A9D0500E1BD58 /* Reserve.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reserve.storyboard; sourceTree = "<group>"; };
+		D3D961AD2A8A9D1400E1BD58 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +96,10 @@
 		D31701122A8100EC00B95475 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D3C55DE72A8D43D800459EE4 /* Order */,
+				D3D961AA2A8A9CE100E1BD58 /* reserve */,
+				D31BF0582A8A525000A615B9 /* nearby cafe */,
+				D32946F12A87AF91003388F8 /* Details viewController */,
 				D31701132A8100F900B95475 /* custom TabBar */,
 				D3299F9C2A8005600052BDCB /* LaunchScreen.storyboard */,
 			);
@@ -104,6 +132,7 @@
 			children = (
 				D317011A2A8103ED00B95475 /* uiview+Extention.swift */,
 				D317011C2A8104C200B95475 /* UiViewController+Etention.swift */,
+				D3C55DF12A8D556F00459EE4 /* UIImageView++.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -130,6 +159,7 @@
 		D317012D2A82862F00B95475 /* collectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D39E5C6B2A8BAC61001B92E0 /* Shop Special */,
 				D31C7D6A2A86ACAD00AC4768 /* favoriteCoffee */,
 				D31701332A82867000B95475 /* nearestCoffee */,
 				D31701322A82865D00B95475 /* popularCoffee */,
@@ -155,6 +185,15 @@
 			path = nearestCoffee;
 			sourceTree = "<group>";
 		};
+		D31BF0582A8A525000A615B9 /* nearby cafe */ = {
+			isa = PBXGroup;
+			children = (
+				D31BF05B2A8A527F00A615B9 /* NearbyCafesViewController.swift */,
+				D31BF0592A8A526C00A615B9 /* NearbyCafes.storyboard */,
+			);
+			path = "nearby cafe";
+			sourceTree = "<group>";
+		};
 		D31C7D6A2A86ACAD00AC4768 /* favoriteCoffee */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +201,15 @@
 				D31C7D672A86AC9B00AC4768 /* favoriteCollectionViewCell.xib */,
 			);
 			path = favoriteCoffee;
+			sourceTree = "<group>";
+		};
+		D32946F12A87AF91003388F8 /* Details viewController */ = {
+			isa = PBXGroup;
+			children = (
+				D32946F62A87B292003388F8 /* detailsViewController.swift */,
+				D32946F72A87B292003388F8 /* detailsViewController.xib */,
+			);
+			path = "Details viewController";
 			sourceTree = "<group>";
 		};
 		D3299F822A80055E0052BDCB = {
@@ -183,6 +231,7 @@
 		D3299F8D2A80055E0052BDCB /* coffee_App */ = {
 			isa = PBXGroup;
 			children = (
+				D3C55DEE2A8D550E00459EE4 /* Services */,
 				D31701172A81013100B95475 /* custom Component */,
 				D31701162A81010200B95475 /* Utilities */,
 				D31701152A8100FF00B95475 /* Extentions */,
@@ -193,6 +242,41 @@
 				D3299F972A80055E0052BDCB /* coffee_App.xcdatamodeld */,
 			);
 			path = coffee_App;
+			sourceTree = "<group>";
+		};
+		D39E5C6B2A8BAC61001B92E0 /* Shop Special */ = {
+			isa = PBXGroup;
+			children = (
+				D39E5C6C2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift */,
+				D39E5C6D2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib */,
+			);
+			path = "Shop Special";
+			sourceTree = "<group>";
+		};
+		D3C55DE72A8D43D800459EE4 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				D3C55DEC2A8D442300459EE4 /* orderViewController.swift */,
+				D3C55DEA2A8D441000459EE4 /* Order.storyboard */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		D3C55DEE2A8D550E00459EE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3C55DEF2A8D552600459EE4 /* GIF Loader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3D961AA2A8A9CE100E1BD58 /* reserve */ = {
+			isa = PBXGroup;
+			children = (
+				D3D961AD2A8A9D1400E1BD58 /* ReserveViewController.swift */,
+				D3D961AB2A8A9D0500E1BD58 /* Reserve.storyboard */,
+			);
+			path = reserve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +337,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31BF05A2A8A526C00A615B9 /* NearbyCafes.storyboard in Resources */,
 				D31C7D692A86AC9B00AC4768 /* favoriteCollectionViewCell.xib in Resources */,
 				D3299F9E2A8005600052BDCB /* LaunchScreen.storyboard in Resources */,
 				D3299F9B2A8005600052BDCB /* Assets.xcassets in Resources */,
+				D39E5C6F2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib in Resources */,
+				D3C55DEB2A8D441000459EE4 /* Order.storyboard in Resources */,
 				D31701312A82865400B95475 /* popularCoffeeCollectionViewCell.xib in Resources */,
+				D3D961AC2A8A9D0500E1BD58 /* Reserve.storyboard in Resources */,
 				D31701372A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib in Resources */,
+				D32946F92A87B292003388F8 /* detailsViewController.xib in Resources */,
 				D3299F962A80055E0052BDCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,18 +359,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31701362A82868E00B95475 /* nearestCoffeeCollectionViewCell.swift in Sources */,
+				D32946F82A87B292003388F8 /* detailsViewController.swift in Sources */,
 				D31701282A82854200B95475 /* popularCoffee.swift in Sources */,
 				D31C7D6C2A86ACE700AC4768 /* favoriteViewController.swift in Sources */,
+				D31BF05C2A8A527F00A615B9 /* NearbyCafesViewController.swift in Sources */,
 				D31C7D682A86AC9B00AC4768 /* favoriteCollectionViewCell.swift in Sources */,
 				D317012A2A8285B600B95475 /* coffeeShop.swift in Sources */,
 				D3299F8F2A80055E0052BDCB /* AppDelegate.swift in Sources */,
 				D317011B2A8103ED00B95475 /* uiview+Extention.swift in Sources */,
 				D3299F912A80055E0052BDCB /* SceneDelegate.swift in Sources */,
+				D3C55DED2A8D442300459EE4 /* orderViewController.swift in Sources */,
 				D3299F992A80055E0052BDCB /* coffee_App.xcdatamodeld in Sources */,
+				D3C55DF02A8D552600459EE4 /* GIF Loader.swift in Sources */,
 				D317011D2A8104C200B95475 /* UiViewController+Etention.swift in Sources */,
+				D3D961AE2A8A9D1400E1BD58 /* ReserveViewController.swift in Sources */,
 				D31701262A81113300B95475 /* custom tabBar.swift in Sources */,
 				D31701192A81033900B95475 /* HomeViewController.swift in Sources */,
+				D3C55DF22A8D556F00459EE4 /* UIImageView++.swift in Sources */,
 				D317012C2A82860400B95475 /* shopSpecial.swift in Sources */,
+				D39E5C6E2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift in Sources */,
 				D31701302A82865400B95475 /* popularCoffeeCollectionViewCell.swift in Sources */,
 				D31701242A810C2C00B95475 /* card view.swift in Sources */,
 				D31C7D6E2A86BA6600AC4768 /* mapViewController.swift in Sources */,

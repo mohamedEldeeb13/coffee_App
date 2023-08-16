@@ -15,9 +15,14 @@ extension UIViewController{
        return String(describing: self)
         
     }
-    static func instantiat() -> Self {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    static func instantiat(name: StoryboardEnum) -> Self {
+        let storyBoard = UIStoryboard(name: name.rawValue, bundle: nil)
         return storyBoard.instantiateViewController(identifier: identifier) as! Self
     }
-    
+    enum StoryboardEnum: String {
+        case Order = "Order"
+        case NearbyCafes = "NearbyCafes"
+        case Reserve = "Reserve"
+        
+    }
 }

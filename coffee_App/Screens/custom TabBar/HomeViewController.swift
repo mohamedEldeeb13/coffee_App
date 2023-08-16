@@ -24,8 +24,8 @@ class HomeViewController: UIViewController {
     var cofffeeShops: [CoffeeShop] = [
         .init(image: UIImage(named: "CoffeeShop01"), title: "Asley coffee", rating: "5.0/ 105 ratings", destance: "1.5 km"),
         .init(image: UIImage(named: "CoffeeShop02"), title: "Old town coffee", rating: "4.0/ 125 ratings", destance: "2.4 km"),
-        .init(image: UIImage(named: "CoffeeShop01"), title: "Asley coffee", rating: "5.0/ 105 ratings", destance: "1.5 km"),
-        .init(image: UIImage(named: "CoffeeShop02"), title: "Old town coffee", rating: "4.0/ 125 ratings", destance: "2.4 km")
+        .init(image: UIImage(named: "CoffeeShop03"), title: "Asador Etxebarri", rating: "5.0/ 105 ratings", destance: "1.5 km"),
+        .init(image: UIImage(named: "CoffeeShop04"), title: "Trèsind Studio", rating: "4.0/ 125 ratings", destance: "2.4 km")
     
     ]
     
@@ -99,7 +99,23 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     }
     
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == popularCollectionView {
+            let controller = detailsViewController(nibName: "detailsViewController", bundle: nil)
+            controller.coffeeObject = popularCoffees[indexPath.row]
+            controller.modalTransitionStyle = .crossDissolve
+            controller.modalPresentationStyle = .fullScreen
+            present(controller, animated: true)
+            
+        }else {
+            
+            let controller = NearbyCafesViewController.instantiat(name: .NearbyCafes)
+            controller.cafeObject = cofffeeShops[indexPath.row]
+            controller.modalTransitionStyle = .crossDissolve
+            controller.modalPresentationStyle = .fullScreen
+            present(controller, animated: true)
+        }
+    }
     
     
 }
