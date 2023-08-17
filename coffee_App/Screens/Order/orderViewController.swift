@@ -20,6 +20,11 @@ class orderViewController: UIViewController {
     
 
     @IBAction func payBtn(_ sender: UIButton) {
+        let stoeyBoard = UIStoryboard(name: "Order", bundle: nil)
+        let vc = stoeyBoard.instantiateViewController(identifier: "ReleodViewController") as! ReleodViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+        
     }
     
 }

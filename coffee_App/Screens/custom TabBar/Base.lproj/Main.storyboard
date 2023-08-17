@@ -375,9 +375,10 @@
         <!--Custom Tab Bar-->
         <scene sceneID="LDL-qZ-bKP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UOf-7y-fdW" customClass="CustomTabBar" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" automaticallyAdjustsScrollViewInsets="NO" id="UOf-7y-fdW" customClass="CustomTabBar" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L4T-ro-jhG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="DarkGreenColor"/>

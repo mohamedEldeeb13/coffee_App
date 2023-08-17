@@ -33,6 +33,10 @@
 		D3299F992A80055E0052BDCB /* coffee_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3299F972A80055E0052BDCB /* coffee_App.xcdatamodeld */; };
 		D3299F9B2A8005600052BDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3299F9A2A8005600052BDCB /* Assets.xcassets */; };
 		D3299F9E2A8005600052BDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3299F9C2A8005600052BDCB /* LaunchScreen.storyboard */; };
+		D38A53AF2A8E405E005B5D35 /* ReleodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A53AE2A8E405E005B5D35 /* ReleodViewController.swift */; };
+		D38A53B12A8E4069005B5D35 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A53B02A8E4069005B5D35 /* DoneViewController.swift */; };
+		D38A53B42A8E4267005B5D35 /* Done.gif in Resources */ = {isa = PBXBuildFile; fileRef = D38A53B22A8E4267005B5D35 /* Done.gif */; };
+		D38A53B52A8E4267005B5D35 /* Reload.gif in Resources */ = {isa = PBXBuildFile; fileRef = D38A53B32A8E4267005B5D35 /* Reload.gif */; };
 		D39E5C6E2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E5C6C2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift */; };
 		D39E5C6F2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39E5C6D2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib */; };
 		D3C55DEB2A8D441000459EE4 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C55DEA2A8D441000459EE4 /* Order.storyboard */; };
@@ -72,6 +76,10 @@
 		D3299F9A2A8005600052BDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3299F9D2A8005600052BDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3299F9F2A8005600052BDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38A53AE2A8E405E005B5D35 /* ReleodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleodViewController.swift; sourceTree = "<group>"; };
+		D38A53B02A8E4069005B5D35 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		D38A53B22A8E4267005B5D35 /* Done.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Done.gif; path = "../../../Downloads/Cup-Coffee-main/Cup Coffee/Done.gif"; sourceTree = "<group>"; };
+		D38A53B32A8E4267005B5D35 /* Reload.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Reload.gif; path = "../../../Downloads/Cup-Coffee-main/Cup Coffee/Reload.gif"; sourceTree = "<group>"; };
 		D39E5C6C2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
 		D39E5C6D2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopSpecialCollectionViewCell.xib; sourceTree = "<group>"; };
 		D3C55DEA2A8D441000459EE4 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
@@ -240,6 +248,8 @@
 				D3299F9A2A8005600052BDCB /* Assets.xcassets */,
 				D3299F9F2A8005600052BDCB /* Info.plist */,
 				D3299F972A80055E0052BDCB /* coffee_App.xcdatamodeld */,
+				D38A53B22A8E4267005B5D35 /* Done.gif */,
+				D38A53B32A8E4267005B5D35 /* Reload.gif */,
 			);
 			path = coffee_App;
 			sourceTree = "<group>";
@@ -258,6 +268,8 @@
 			children = (
 				D3C55DEC2A8D442300459EE4 /* orderViewController.swift */,
 				D3C55DEA2A8D441000459EE4 /* Order.storyboard */,
+				D38A53AE2A8E405E005B5D35 /* ReleodViewController.swift */,
+				D38A53B02A8E4069005B5D35 /* DoneViewController.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -339,11 +351,13 @@
 			files = (
 				D31BF05A2A8A526C00A615B9 /* NearbyCafes.storyboard in Resources */,
 				D31C7D692A86AC9B00AC4768 /* favoriteCollectionViewCell.xib in Resources */,
+				D38A53B42A8E4267005B5D35 /* Done.gif in Resources */,
 				D3299F9E2A8005600052BDCB /* LaunchScreen.storyboard in Resources */,
 				D3299F9B2A8005600052BDCB /* Assets.xcassets in Resources */,
 				D39E5C6F2A8BAC76001B92E0 /* ShopSpecialCollectionViewCell.xib in Resources */,
 				D3C55DEB2A8D441000459EE4 /* Order.storyboard in Resources */,
 				D31701312A82865400B95475 /* popularCoffeeCollectionViewCell.xib in Resources */,
+				D38A53B52A8E4267005B5D35 /* Reload.gif in Resources */,
 				D3D961AC2A8A9D0500E1BD58 /* Reserve.storyboard in Resources */,
 				D31701372A82868E00B95475 /* nearestCoffeeCollectionViewCell.xib in Resources */,
 				D32946F92A87B292003388F8 /* detailsViewController.xib in Resources */,
@@ -369,10 +383,12 @@
 				D317011B2A8103ED00B95475 /* uiview+Extention.swift in Sources */,
 				D3299F912A80055E0052BDCB /* SceneDelegate.swift in Sources */,
 				D3C55DED2A8D442300459EE4 /* orderViewController.swift in Sources */,
+				D38A53B12A8E4069005B5D35 /* DoneViewController.swift in Sources */,
 				D3299F992A80055E0052BDCB /* coffee_App.xcdatamodeld in Sources */,
 				D3C55DF02A8D552600459EE4 /* GIF Loader.swift in Sources */,
 				D317011D2A8104C200B95475 /* UiViewController+Etention.swift in Sources */,
 				D3D961AE2A8A9D1400E1BD58 /* ReserveViewController.swift in Sources */,
+				D38A53AF2A8E405E005B5D35 /* ReleodViewController.swift in Sources */,
 				D31701262A81113300B95475 /* custom tabBar.swift in Sources */,
 				D31701192A81033900B95475 /* HomeViewController.swift in Sources */,
 				D3C55DF22A8D556F00459EE4 /* UIImageView++.swift in Sources */,

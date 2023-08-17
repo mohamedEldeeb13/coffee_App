@@ -459,6 +459,109 @@
             </objects>
             <point key="canvasLocation" x="48" y="630"/>
         </scene>
+        <!--Releod View Controller-->
+        <scene sceneID="koC-L7-iWJ">
+            <objects>
+                <viewController storyboardIdentifier="ReleodViewController" id="a5z-sb-XKV" customClass="ReleodViewController" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E6O-gh-SY2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q6i-h3-bqz">
+                                <rect key="frame" x="16.666666666666657" y="248.66666666666663" width="360" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="OBJ-Gc-Sog"/>
+                                    <constraint firstAttribute="width" constant="360" id="ZAV-V8-pFY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order is processing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t54-yx-nNb">
+                                <rect key="frame" x="61.666666666666657" y="688.66666666666663" width="270" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xD2-Sv-or6"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t54-yx-nNb" firstAttribute="top" secondItem="Q6i-h3-bqz" secondAttribute="bottom" constant="60" id="SrP-56-9MF"/>
+                            <constraint firstItem="Q6i-h3-bqz" firstAttribute="centerX" secondItem="xD2-Sv-or6" secondAttribute="centerX" id="VOT-er-thi"/>
+                            <constraint firstItem="Q6i-h3-bqz" firstAttribute="centerY" secondItem="xD2-Sv-or6" secondAttribute="centerY" id="f0m-w0-cdh"/>
+                            <constraint firstItem="t54-yx-nNb" firstAttribute="centerX" secondItem="xD2-Sv-or6" secondAttribute="centerX" id="hCT-47-MHY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reloadImage" destination="Q6i-h3-bqz" id="Hag-P2-rab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwy-pQ-BRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="1206"/>
+        </scene>
+        <!--Done View Controller-->
+        <scene sceneID="rSm-Ru-g2u">
+            <objects>
+                <viewController storyboardIdentifier="DoneViewController" id="Ne1-7T-Xqp" customClass="DoneViewController" customModule="coffee_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TbR-YO-Lo6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mnn-Vm-zgu">
+                                <rect key="frame" x="16.666666666666657" y="248.66666666666663" width="360" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="GHR-2k-jgk"/>
+                                    <constraint firstAttribute="width" constant="360" id="mAs-no-bI4"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-Te-2dy">
+                                <rect key="frame" x="96.666666666666686" y="688.66666666666663" width="200" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Confirmed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO3-5H-wNg">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk8-cx-HhG">
+                                        <rect key="frame" x="0.0" y="36.666666666666742" width="200" height="34.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="back to the home page">
+                                            <color key="titleColor" name="CoffeeColor"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="back to the home page">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                            <color key="baseForegroundColor" name="CoffeeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="Ne1-7T-Xqp" eventType="touchUpInside" id="QLN-ON-oaz"/>
+                                            <segue destination="ucT-Cy-KsF" kind="unwind" unwindAction="unwindToCustomTabBar:" id="ZJO-3z-91l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Si-Zm-csP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fG2-So-edq"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rsg-Te-2dy" firstAttribute="top" secondItem="Mnn-Vm-zgu" secondAttribute="bottom" constant="60" id="JAo-as-hLB"/>
+                            <constraint firstItem="Mnn-Vm-zgu" firstAttribute="centerX" secondItem="fG2-So-edq" secondAttribute="centerX" id="M6I-6n-7wI"/>
+                            <constraint firstItem="Rsg-Te-2dy" firstAttribute="centerX" secondItem="fG2-So-edq" secondAttribute="centerX" id="ozf-4C-8mK"/>
+                            <constraint firstItem="Mnn-Vm-zgu" firstAttribute="centerY" secondItem="fG2-So-edq" secondAttribute="centerY" id="sAR-Gj-CGf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneImage" destination="Mnn-Vm-zgu" id="gaU-yO-yGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjl-86-rzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ucT-Cy-KsF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="443.51145038167937" y="1204.9295774647887"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CoffeeShop02" width="177" height="154"/>
